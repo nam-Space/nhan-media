@@ -1,0 +1,24 @@
+@import './breakpoint.scss';
+
+.title{
+    color: #111311;
+    max-width: 481px;
+    @include mobile {
+        margin-bottom: 50px;
+    }
+}
+
+.desc{
+    width: 427px;
+    @include tablet {
+        width: 230px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
+
+.title span {
+    color: #FFC500;
+}

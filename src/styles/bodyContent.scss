@@ -1,0 +1,202 @@
+@import './breakpoint.scss';
+
+.wrapper-img{
+    max-width: 1350px;
+    display: grid;
+    margin: auto;
+    position: relative;
+
+    .qr-img{
+        position: absolute;
+        top: 117px;
+        left: 112px;
+        z-index: 1;
+    }
+
+    .blur-img{
+        margin-top: 200px;
+        height: 892px;
+        // height: 100%;
+        background: linear-gradient(270deg,#ffb800,#ffe600);
+        filter: blur(150px);
+        border-radius: 50%;
+
+        @include tablet {
+            height: 625px;
+        }
+
+        @include mobile {
+            height: 497px;
+        }
+    }
+
+    .sun-img-wrapper-real{
+        position: absolute;
+        top: 163px;
+        width: 100%;
+        padding: 0 75px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include tablet {
+            width: 100%;
+        }
+
+        @include mobile {
+            top: 230px;
+        }
+
+        .sun-img-real{
+            width: 100%;
+        }
+
+        .swiper{
+            position: absolute;
+            top: -47px;
+            left: 0;
+            width: 100%;
+            height: calc(100% + 43px);
+        }
+
+        .leader-girl{
+            position: absolute;
+            // top: calc(217px + 47px);
+            left: 120px;
+            bottom: 20.44444%;
+            transition: all linear 0.3s;
+            overflow: hidden;
+            .leader-info{
+                transition: all linear 0.3s;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+
+        .leader-boss1{
+            position: absolute;
+            // right: 315px;
+            left: 50%;
+            transition: all linear 0.3s;
+            overflow: hidden;
+            .leader-info{
+                transition: all linear 0.3s;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+
+        .leader-boss2{
+            position: absolute;
+            right: 75px;
+            // bottom: 181.5px;
+            bottom: 13.44444%;
+            transition: all linear 0.3s;
+            overflow: hidden;
+            .leader-info{
+                transition: all linear 0.3s;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+            }
+        }
+
+        .leader-girl:hover, .leader-boss1:hover, .leader-boss2:hover{
+            transform: scale(1.1);
+        }
+
+        .leader-girl:hover img, .leader-boss1:hover img, .leader-boss2:hover img {
+            filter: blur(5px);
+        }
+
+        .leader-girl:hover .leader-info, .leader-boss1:hover .leader-info, .leader-boss2:hover .leader-info {
+            opacity: 1;
+            color: #fff;
+        }
+
+        @include tablet {
+            .leader-girl, .leader-boss1, .leader-boss2 {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .leader-girl img, .leader-boss1 img, .leader-boss2 img {
+                height: 65%;
+                width: 65%;
+                object-fit: cover;
+            }
+        }
+
+        @include mobile {
+            .leader-girl, .leader-boss1, .leader-boss2 {
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .leader-girl img, .leader-boss1 img, .leader-boss2 img {
+                height: 80%;
+                width: 60%;
+                object-fit: cover;
+            }
+        }
+    } 
+}
+
+// custom next - prev
+@include pc_and_tablet {
+    .swiper-button-prev{
+        display: none !important;
+    }
+    
+    .swiper-button-next{
+        right: 50% !important;
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        background-image: url("../assets/images/Vector.png") !important;
+        background-size: cover !important;
+        background-repeat: no-repeat;
+        width: 38.64px !important;
+        height: 38.12px !important;
+        transform: scale(1) !important;
+    
+        &::after {
+            display: none !important;
+        }
+    }
+}
+
+@include mobile {
+    .swiper-button-prev, .swiper-button-next{
+        width: 43px !important;
+        height: 43px !important;
+        background-color: rgba(0,0,0,.5) !important;
+        border-radius: 50% !important;
+        transition: all linear 0.2s;
+    }
+
+    .swiper-button-prev:hover, .swiper-button-next:hover {
+        background-color: rgba(0,0,0,.8) !important;
+    }
+
+    .swiper-button-prev::after, .swiper-button-next::after {
+        color: #fff !important;
+        font-size: 20px !important;
+    }
+}
+
+
