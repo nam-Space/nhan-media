@@ -26,9 +26,6 @@ const BodyContent = () => {
                 <Swiper
                     loop={true}
                     className="wrapper-img"
-                    // pagination={{
-                    //     clickable: true,
-                    // }}
                     slidesPerView={3}
                     slidesPerGroup={3}
                     speed={800}
@@ -39,11 +36,11 @@ const BodyContent = () => {
                             slidesPerView: 1,
                             slidesPerGroup: 1,
                         },
-                        768: {
+                        769: {
                             slidesPerView: 2,
                             slidesPerGroup: 2,
                         },
-                        1024: {
+                        1025: {
                             slidesPerView: 3,
                             slidesPerGroup: 3,
                         },

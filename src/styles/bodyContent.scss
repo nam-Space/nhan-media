@@ -57,10 +57,13 @@
             width: 100%;
             height: calc(100% + 43px);
         }
-
+        
         .leader-girl{
             position: absolute;
             // top: calc(217px + 47px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
             left: 120px;
             bottom: 20.44444%;
             transition: all linear 0.3s;
@@ -78,6 +81,9 @@
         .leader-boss1{
             position: absolute;
             // right: 315px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             left: 50%;
             transition: all linear 0.3s;
             overflow: hidden;
@@ -95,6 +101,9 @@
             position: absolute;
             right: 75px;
             // bottom: 181.5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             bottom: 13.44444%;
             transition: all linear 0.3s;
             overflow: hidden;
@@ -132,8 +141,8 @@
                 justify-content: center;
             }
             .leader-girl img, .leader-boss1 img, .leader-boss2 img {
-                height: 65%;
-                width: 65%;
+                height: 75%;
+                width: 75%;
                 object-fit: cover;
             }
         }
