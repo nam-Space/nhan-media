@@ -32,6 +32,10 @@
 
     .sun-img-wrapper-real{
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         top: 163px;
         width: 100%;
         padding: 0 75px;
@@ -50,6 +54,40 @@
             width: 100%;
         }
 
+        .sun-img-real1, .sun-img-real2, .sun-img-real3, .sun-img-real4, .sun-img-real5 {
+            position: absolute;
+        }
+
+        .sun-img-real1{
+            top: -16px;
+            width: 91.11111%;
+            height: calc(100% + 16px);
+        }
+
+        .sun-img-real2{
+            top: calc(-16px * 2);
+            width: 93.33333%;
+            height: calc(100% + 16px * 2);
+        }
+
+        .sun-img-real3{
+            top: calc(-16px * 3);
+            width: 95.55556%;
+            height: calc(100% + 16px * 3);
+        }
+
+        .sun-img-real4{
+            top: calc(-16px * 4);
+            width: 97.77778%;
+            height: calc(100% + 16px * 4);
+        }
+
+        .sun-img-real5{
+            top: calc(-16px * 5);
+            width: 100%;
+            height: calc(100% + 16px * 5);
+        }
+
         .swiper{
             position: absolute;
             top: -47px;
@@ -60,7 +98,6 @@
         
         .leader-girl{
             position: absolute;
-            // top: calc(217px + 47px);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -80,7 +117,6 @@
 
         .leader-boss1{
             position: absolute;
-            // right: 315px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -100,7 +136,6 @@
         .leader-boss2{
             position: absolute;
             right: 75px;
-            // bottom: 181.5px;
             display: flex;
             justify-content: center;
             align-items: center;
